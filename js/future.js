@@ -17,7 +17,7 @@ function ( ArcGISDynamicMapServiceLayer, Extent, SpatialReference, Query, QueryT
         		})
         		// Future PDF link
 				$('#' + t.id + 'futurePDF').on('click', function(){
-					window.open("https://crs-maps.coastalresilience.org/" + t.obj.crsNoSpace + "_Future_" + t.pin + ".pdf", "_blank");					
+					window.open("https://crs-maps.coastalresilience.org/" + t.obj.crsNoSpace + "GA_Future_" + t.pin + ".pdf", "_blank");					
 				});
 				// Future toggle buttons click
 				$("#" + t.id + "futureToggle input").on('change', function(c){

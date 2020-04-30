@@ -157,7 +157,7 @@ function ( ArcGISDynamicMapServiceLayer, Extent, SpatialReference, Query, QueryT
 				});
 				// download parcel table
 				$('#' + t.id + 'futureTop50').on('click', function(){
-					window.open("https://crs-maps.coastalresilience.org/" + t.obj.crsNoSpace + "_Future_Parcel_Table.zip", "_blank");					
+					window.open("https://crs-maps.coastalresilience.org/" + t.obj.crsNoSpace + "GA_Future_Parcel_Table.zip", "_blank");					
 				});
 				// future layer checkbox clicks
 				$("#" + t.id + "curElOsp").on("change",function(c){

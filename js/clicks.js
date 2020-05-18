@@ -72,6 +72,13 @@ function ( declare, Query, QueryTask, FeatureLayer ) {
 					.change(function(c){
 						$( "#" + t.id + "tab-wrap").show();
 						t.obj.crsSelected = c.target.value;
+						// send selected state to google analytics
+						ga('send', {
+							hitType: 'event',
+							eventCategory: 'Community Rating System GA',
+							eventAction: 'Community Selected',
+							eventLabel: t.obj.crsSelected
+						});
 						t.obj.crsNoSpace = c.target.value.replace(/\s+/g, '');
 						$('#' + t.id + 'printAnchorDiv').empty();
 						// use selected community to query community layer 	
@@ -93,6 +100,13 @@ function ( declare, Query, QueryTask, FeatureLayer ) {
 				// Data download click
 				$('#' + t.id + 'dlBtn').on('click',  function(){
 					window.open("https://crs-maps.coastalresilience.org/" + t.obj.crsNoSpace + "GA_Maps.zip", "_parent");
+					// send selected state to google analytics
+					ga('send', {
+						hitType: 'event',
+						eventCategory: 'Community Rating System GA',
+						eventAction: 'Download Button',
+						eventLabel: 'Downloaded ' + t.obj.crsSelected
+					});
 				});	
 				
 			},

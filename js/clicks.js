@@ -191,6 +191,7 @@ function ( declare, Query, QueryTask, FeatureLayer ) {
 							t.layerDefs[v] = "CRS_NAME = '" + t.obj.crsSelected + "'"
 						}); 							 
 						//.this.navigation.clearFuture(t);
+						t.layerDefs[13] = "CRS_NAME = '" + t.obj.crsSelected + "'";
 						t.dynamicLayer.setLayerDefinitions(t.layerDefs);
 						t.dynamicLayer1.setLayerDefinitions(t.layerDefs);								
 						t.obj.visibleLayers = [t.CommunityBoundary, 13];

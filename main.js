@@ -110,7 +110,7 @@ function ( 	declare, PluginBase, ContentPane, dom, domStyle, domGeom, obj, conte
 			this.esriapi.esriApiFunctions(this);
 			this.esriapi.featureLayerListeners(this);
 			this.future.featureLayerListeners(this);
-			this.rendered = true;	
+			this.rendered = true;
 			$("#viewCrsInfoGraphicIcon").animate({backgroundColor:"rgba(243,243,21,0.3)"}, 1050, function(){
 				$("#viewCrsInfoGraphicIcon").animate({backgroundColor:"#ffffff"}, 1050, function(){
 					$("#viewCrsInfoGraphicIcon").animate({backgroundColor:"rgba(243,243,21,0.3)"}, 1050, function(){

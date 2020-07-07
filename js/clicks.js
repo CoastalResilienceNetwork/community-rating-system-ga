@@ -193,7 +193,7 @@ function ( declare, Query, QueryTask, FeatureLayer ) {
 						//.this.navigation.clearFuture(t);
 						t.dynamicLayer.setLayerDefinitions(t.layerDefs);
 						t.dynamicLayer1.setLayerDefinitions(t.layerDefs);								
-						t.obj.visibleLayers = [t.CommunityBoundary];
+						t.obj.visibleLayers = [t.CommunityBoundary, 13];
 						t.dynamicLayer.setVisibleLayers(t.obj.visibleLayers);
 						$('#' + t.id + 'curElOsp').prop('checked', t.obj.curElOsp).trigger("change");
 						$('#' + t.id + 'ImpactAd').prop('checked', t.obj.ImpactAd).trigger("change");		
